@@ -92,6 +92,7 @@ The database contains pre-configured profiles initialized for evaluators and stu
 
 If you find this project useful or it helped you in your work, consider sponsoring!
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](assets/Aditya%20Ranjan.jpeg)
 [![Sponsor via UPI](https://img.shields.io/badge/Sponsor%20via%20UPI-097969?style=for-the-badge&logo=google-pay&logoColor=white)](upi://pay?pa=swainaditya85-2@oksbi&pn=Aditya%20Swain)
 
 **UPI ID**: `swainaditya85-2@oksbi`
