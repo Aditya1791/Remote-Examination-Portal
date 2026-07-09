@@ -1,0 +1,277 @@
+{
+  "users": [
+    {
+      "id": "u-admin-1",
+      "name": "Arthur Pendragon",
+      "email": "admin@exam.com",
+      "role": "admin",
+      "createdAt": "2026-01-10T12:00:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    },
+    {
+      "id": "u-teacher-1",
+      "name": "Professor Charles Xavier",
+      "email": "teacher@exam.com",
+      "role": "teacher",
+      "createdAt": "2026-02-15T09:30:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    },
+    {
+      "id": "u-student-1",
+      "name": "Peter Parker",
+      "email": "student@exam.com",
+      "role": "student",
+      "createdAt": "2026-03-01T10:00:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    },
+    {
+      "id": "u-student-2",
+      "name": "Gwen Stacy",
+      "email": "gwen@exam.com",
+      "role": "student",
+      "createdAt": "2026-03-02T11:00:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    },
+    {
+      "id": "u-student-3",
+      "name": "Miles Morales",
+      "email": "miles@exam.com",
+      "role": "student",
+      "createdAt": "2026-03-05T14:15:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    },
+    {
+      "id": "u-student-4",
+      "name": "Bruce Wayne",
+      "email": "bruce@exam.com",
+      "role": "student",
+      "createdAt": "2026-03-06T15:20:00.000Z",
+      "passwordHash": "$2b$10$7zNy5iirwh6oHjyVIFJ02OlFVoD.OhQNKWS6yNnf7hRAVo/l8ZiLK"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-1",
+      "title": "React & TypeScript Frontend Architecture (MCQ)",
+      "description": "Assessments on custom state sync, virtual DOM concepts, React 19 hooks, and TypeScript module resolution configurations.",
+      "durationMinutes": 15,
+      "creatorId": "u-teacher-1",
+      "creatorName": "Professor Charles Xavier",
+      "createdAt": "2026-06-15T10:00:00.000Z",
+      "questions": [
+        {
+          "id": "q1",
+          "questionText": "<p>Which of the following is true regarding <strong>React 19 Server Actions</strong>?</p>",
+          "type": "mcq",
+          "options": [
+            "They can only run on client-side environments.",
+            "They are functions designed to handle form submissions and data mutations directly on the server.",
+            "They completely replace Redux Toolkit for local global state management.",
+            "They must return HTML structures instead of serializable JSON objects."
+          ],
+          "correctAnswer": "They are functions designed to handle form submissions and data mutations directly on the server.",
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "questionText": "<p>In <strong>tsconfig.json</strong>, what is the primary benefit of enabling the <code>moduleResolution: \"bundler\"</code> flag?</p>",
+          "type": "mcq",
+          "options": [
+            "It forces TypeScript to compile files to CommonJS format.",
+            "It configures the compiler to resolve imports modeled after modern frontend bundlers (like Vite or Webpack).",
+            "It disables all external type-checking to speed up builds.",
+            "It automatically bundles node_modules into a single production index file."
+          ],
+          "correctAnswer": "It configures the compiler to resolve imports modeled after modern frontend bundlers (like Vite or Webpack).",
+          "points": 10
+        },
+        {
+          "id": "q3",
+          "questionText": "<p>What is the exact behavior of <strong>useMemo</strong> dependency checking in React 18+?</p>",
+          "type": "mcq",
+          "options": [
+            "It performs deep recursive equality checks on all objects inside the dependency array.",
+            "It performs strict reference equality checks (Object.is) on the primitive or object values declared in the array.",
+            "It forces a component re-render even if the dependency values are completely identical.",
+            "It runs the memoized calculation asynchronously in a separate web worker thread."
+          ],
+          "correctAnswer": "It performs strict reference equality checks (Object.is) on the primitive or object values declared in the array.",
+          "points": 10
+        },
+        {
+          "id": "q4",
+          "questionText": "<p>Which Tailwind v4 directive is the official syntax for importing Tailwind classes in <code>index.css</code>?</p>",
+          "type": "mcq",
+          "options": [
+            "@tailwind base; @tailwind components; @tailwind utilities;",
+            "@import \"tailwindcss\";",
+            "@import \"tailwind/v4/all.css\";",
+            "import 'tailwindcss' in main.tsx instead of css files."
+          ],
+          "correctAnswer": "@import \"tailwindcss\";",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "exam-2",
+      "title": "Advanced System Engineering & Cloud Infrastructure (All Types)",
+      "description": "Advanced topics covering relational Spanner database schemas, security rule hardening, and JWT authentication middleware setups.",
+      "durationMinutes": 45,
+      "creatorId": "u-teacher-1",
+      "creatorName": "Professor Charles Xavier",
+      "createdAt": "2026-06-20T14:00:00.000Z",
+      "questions": [
+        {
+          "id": "e2-q1",
+          "questionText": "<p>In the context of REST APIs, why is it critical to handle <strong>sensitive API keys</strong> exclusively server-side (e.g. in Express routes) instead of local browser components?</p>",
+          "type": "short",
+          "options": [],
+          "correctAnswer": "To prevent exposing private credentials, API tokens, and access rights in public client-side bundles accessible via DevTools.",
+          "points": 15
+        },
+        {
+          "id": "e2-q2",
+          "questionText": "<p>Which of the following describes the difference between symmetric and asymmetric token signing in JWT?</p>",
+          "type": "mcq",
+          "options": [
+            "Asymmetric signing uses a single shared secret, while symmetric signing uses a public/private keypair.",
+            "Symmetric signing uses a single shared secret key, while asymmetric signing uses a public/private keypair (like RS256).",
+            "Asymmetric signing is strictly forbidden in modern web frameworks.",
+            "Symmetric signing is inherently slower because it requires network verification."
+          ],
+          "correctAnswer": "Symmetric signing uses a single shared secret key, while asymmetric signing uses a public/private keypair (like RS256).",
+          "points": 10
+        },
+        {
+          "id": "e2-q3",
+          "questionText": "<p>Describe how you would configure a <strong>Rate Limiter</strong> in an Express gateway. Detail the architectural reasons for placing this middleware before JWT validation.</p>",
+          "type": "short",
+          "options": [],
+          "correctAnswer": "Rate limiters must be placed before JWT verification to mitigate DoS/brute-force attacks on CPU-intensive decryption operations. Express-rate-limit or Redis stores are commonly configured.",
+          "points": 15
+        },
+        {
+          "id": "e2-q4",
+          "questionText": "<p><strong>Programming Challenge:</strong> Write a JavaScript function that takes a positive integer and returns its factorial.</p>",
+          "type": "code",
+          "codeLanguage": "javascript",
+          "codeTemplate": "function factorial(n) {\n  // Write your code here\n  \n}",
+          "correctAnswer": "function factorial(n) {\n  if (n <= 1) return 1;\n  return n * factorial(n - 1);\n}",
+          "points": 20
+        },
+        {
+          "id": "e2-q5",
+          "questionText": "<p><strong>Architecture Submission:</strong> Upload your certified technical architect report or cloud system design diagram (PDF format preferred).</p>",
+          "type": "file",
+          "maxFileSizeMB": 10,
+          "correctAnswer": "",
+          "points": 20
+        },
+        {
+          "id": "e2-q6",
+          "questionText": "<p><strong>Verbal Presentation:</strong> Explain the key differences between ACID and BASE database properties in under 60 seconds.</p>",
+          "type": "audio-video",
+          "recordingDurationSeconds": 60,
+          "correctAnswer": "",
+          "points": 20
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-2zrwk6ixr",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "startTime": "2026-07-09T12:25:48.964Z",
+      "answers": {
+        "q1": "They are functions designed to handle form submissions and data mutations directly on the server.",
+        "q2": "It configures the compiler to resolve imports modeled after modern frontend bundlers (like Vite or Webpack).",
+        "q3": "It performs strict reference equality checks (Object.is) on the primitive or object values declared in the array.",
+        "q4": "@import \"tailwindcss\";"
+      },
+      "score": 40,
+      "maxScore": 40,
+      "graded": true,
+      "status": "submitted",
+      "submitTime": "2026-07-09T12:26:50.793Z",
+      "durationSeconds": 6
+    }
+  ],
+  "proctorLogs": [
+    {
+      "id": "log-wpbdyqay5",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "tab-switch",
+      "timestamp": "2026-07-09T12:25:49.177Z",
+      "details": "Student minimized browser window or switched active application tabs."
+    },
+    {
+      "id": "log-upt80zjas",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "blur",
+      "timestamp": "2026-07-09T12:26:01.635Z",
+      "details": "Student lost browser focus (clicked away outside the exam canvas)."
+    },
+    {
+      "id": "log-6g9oxsnbu",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "tab-switch",
+      "timestamp": "2026-07-09T12:26:02.028Z",
+      "details": "Student minimized browser window or switched active application tabs."
+    },
+    {
+      "id": "log-pzmyb5svq",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "blur",
+      "timestamp": "2026-07-09T12:26:32.323Z",
+      "details": "Student lost browser focus (clicked away outside the exam canvas)."
+    },
+    {
+      "id": "log-tp5t2talx",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "tab-switch",
+      "timestamp": "2026-07-09T12:26:32.504Z",
+      "details": "Student minimized browser window or switched active application tabs."
+    },
+    {
+      "id": "log-h3dhxbcn5",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "blur",
+      "timestamp": "2026-07-09T12:26:50.820Z",
+      "details": "Student lost browser focus (clicked away outside the exam canvas)."
+    },
+    {
+      "id": "log-aj67tmbra",
+      "examId": "exam-1",
+      "examTitle": "React & TypeScript Frontend Architecture (MCQ)",
+      "studentId": "u-student-1",
+      "studentName": "Peter Parker",
+      "eventType": "focus",
+      "timestamp": "2026-07-09T12:26:50.841Z",
+      "details": "Student returned focus to the exam dashboard."
+    }
+  ],
+  "warnings": []
+}
