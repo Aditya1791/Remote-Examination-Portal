@@ -17,7 +17,7 @@ import {
 } from "./src/types.js";
 
 const PORT = 3000;
-const JWT_SECRET = process.env.GEMINI_API_KEY || "SUPER_SECRET_JWT_KEY_RemoteExamPortal_2026";
+const JWT_SECRET = process.env.JWT_SECRET || "SUPER_SECRET_JWT_KEY_RemoteExamPortal_2026";
 const DATA_DIR = path.join(process.cwd(), "data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
 

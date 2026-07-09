@@ -2,5 +2,5 @@
   "name": "Remote Examination Portal",
   "description": "An advanced full-stack exam management and remote proctoring platform with distinct admin, teacher, and student dashboards, custom rich text question editing, automated grading, and proctoring telemetry logs.",
   "requestFramePermissions": ["camera"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }
